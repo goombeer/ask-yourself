@@ -1,0 +1,15 @@
+type HealthcheckResult {
+    isOK: Boolean!
+    server: ServerEnvType!
+}
+
+enum ServerEnvType {
+    local
+    dev
+    staging
+    production
+}
+
+type Query {
+    healthcheck: HealthcheckResult!
+}

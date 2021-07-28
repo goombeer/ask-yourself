@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:5.7.22
+    environment:
+      - MYSQL_DATABASE=payments
+      - MYSQL_ROOT_PASSWORD=password1!
+    ports:
+      - "3306:3306"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
