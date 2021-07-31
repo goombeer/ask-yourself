@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"log"
 	"net/http"
 	"os"
 	"os/signal"
@@ -12,7 +11,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-
+	"github.com/goombeer/ask-yourself/src/config"
+	"github.com/goombeer/ask-yourself/src/di"
+	"github.com/goombeer/ask-yourself/src/domain/log"
 )
 
 func main() {
